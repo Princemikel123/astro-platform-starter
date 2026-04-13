@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Rocket, BarChart3, Send } from "lucide-react";
 
-const MASCOT_URL = "https://customer-assets.emergentagent.com/job_531ec90e-7e8f-4b7a-89cd-33ea431bc5f8/artifacts/c4fucffe_mascot.jpg";
+const MASCOT_URL = "https://customer-assets.emergentagent.com/job_sloth-crypto-demo/artifacts/ho2kvm7x_mumu.jpg";
 const BUY_LINK = "https://jup.ag/?sell=So11111111111111111111111111111111111111112&buy=pACMKYiCAygMH4UXfQbs86g2Yv5FidV8QytvVEhpump";
 const CHART_LINK = "https://dexscreener.com/solana/5egthklgbfougwkau2cy7w5osdgdye9dzjb2w18urjwx";
 const TELEGRAM_LINK = "https://t.me/little_flash";
