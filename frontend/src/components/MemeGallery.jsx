@@ -37,6 +37,14 @@ const galleryImages = [
     src: "https://customer-assets.emergentagent.com/job_sloth-crypto-demo/artifacts/19yhqty8_photo_2026-04-12_22-46-41.jpg",
     alt: "Little Flash - Snack Time",
   },
+  {
+    src: "https://customer-assets.emergentagent.com/job_sloth-crypto-demo/artifacts/3p4zgtkt_IMG_6849.jpeg",
+    alt: "Little Flash - Green Candles",
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_sloth-crypto-demo/artifacts/oyvlacao_IMG_6850.jpeg",
+    alt: "Little Flash - Chart Hugger",
+  },
 ];
 
 export default function MemeGallery() {
