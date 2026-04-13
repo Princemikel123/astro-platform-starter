@@ -1,34 +1,111 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Floating leaves */
+@keyframes floatLeaf1 {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.7; }
+  90% { opacity: 0.7; }
+  100% { transform: translate(-200px, 100vh) rotate(720deg); opacity: 0; }
+}
+@keyframes floatLeaf2 {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.5; }
+  90% { opacity: 0.5; }
+  100% { transform: translate(150px, 100vh) rotate(-540deg); opacity: 0; }
+}
+@keyframes floatLeaf3 {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { transform: translate(-100px, 100vh) rotate(360deg); opacity: 0; }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.leaf {
+  position: fixed;
+  pointer-events: none;
+  z-index: 1;
+  font-size: 1.5rem;
+  will-change: transform;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.leaf-1 { animation: floatLeaf1 12s linear infinite; left: 10%; top: -5%; animation-delay: 0s; }
+.leaf-2 { animation: floatLeaf2 15s linear infinite; left: 25%; top: -5%; animation-delay: 2s; }
+.leaf-3 { animation: floatLeaf3 10s linear infinite; left: 45%; top: -5%; animation-delay: 4s; }
+.leaf-4 { animation: floatLeaf1 14s linear infinite; left: 60%; top: -5%; animation-delay: 1s; }
+.leaf-5 { animation: floatLeaf2 11s linear infinite; left: 80%; top: -5%; animation-delay: 3s; }
+.leaf-6 { animation: floatLeaf3 13s linear infinite; left: 90%; top: -5%; animation-delay: 5s; }
+.leaf-7 { animation: floatLeaf1 16s linear infinite; left: 35%; top: -5%; animation-delay: 7s; }
+.leaf-8 { animation: floatLeaf2 9s linear infinite; left: 70%; top: -5%; animation-delay: 6s; }
+.leaf-9 { animation: floatLeaf3 12s linear infinite; left: 15%; top: -5%; animation-delay: 8s; }
+.leaf-10 { animation: floatLeaf1 11s linear infinite; left: 55%; top: -5%; animation-delay: 9s; }
+
+/* Glow pulse for buttons */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(57, 255, 20, 0.4), 0 0 40px rgba(57, 255, 20, 0.2); }
+  50% { box-shadow: 0 0 30px rgba(57, 255, 20, 0.6), 0 0 60px rgba(57, 255, 20, 0.3), 0 0 80px rgba(57, 255, 20, 0.1); }
 }
 
-.App-link {
-    color: #61dafb;
+@keyframes glowPulseOrange {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 0, 0.4), 0 0 40px rgba(255, 107, 0, 0.2); }
+  50% { box-shadow: 0 0 30px rgba(255, 107, 0, 0.6), 0 0 60px rgba(255, 107, 0, 0.3), 0 0 80px rgba(255, 107, 0, 0.1); }
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.glow-green {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+.glow-orange {
+  animation: glowPulseOrange 2s ease-in-out infinite;
+}
+
+/* Hero mascot floating */
+@keyframes mascotFloat {
+  0%, 100% { transform: translateY(0px) rotate(-2deg); }
+  50% { transform: translateY(-20px) rotate(2deg); }
+}
+
+.mascot-float {
+  animation: mascotFloat 4s ease-in-out infinite;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #39FF14 0%, #00E5FF 50%, #FF6B00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section divider vine */
+.vine-divider {
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #39FF14, #FF6B00, #00E5FF, transparent);
+  border-radius: 2px;
+}
+
+/* Lightbox overlay */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+/* Roadmap timeline line */
+.roadmap-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #39FF14, #FF6B00, #00E5FF, #39FF14);
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .roadmap-line {
+    left: 20px;
+  }
 }
