@@ -1,0 +1,106 @@
+{
+  "project_name": "Little Flash ($FLASH)",
+  "theme_and_archetype": {
+    "theme": "Dark",
+    "archetype": "Archetype 7 (Electric & Neon) meets Jungle Theme",
+    "rationale": "Meme coins require high energy, bold contrasts, and vibrant glowing elements to stand out. We are using a deep jungle black/green base mixed with neon green, cyan, and bright orange accents to create a 'radioactive jungle' feel appropriate for crypto."
+  },
+  "typography": {
+    "heading_font": "Anton",
+    "body_font": "Outfit",
+    "scales": {
+      "h1": "text-5xl sm:text-7xl tracking-tighter uppercase",
+      "h2": "text-4xl sm:text-5xl tracking-tight uppercase",
+      "h3": "text-2xl sm:text-3xl tracking-tight uppercase",
+      "body": "text-base sm:text-lg leading-relaxed",
+      "label": "text-sm tracking-[0.2em] uppercase font-bold"
+    }
+  },
+  "colors": {
+    "background": "#050B08",
+    "surface": "rgba(10, 31, 20, 0.6)",
+    "surface_border": "rgba(57, 255, 20, 0.2)",
+    "primary": "#39FF14",
+    "secondary": "#FF6B00",
+    "accent": "#00E5FF",
+    "text_main": "#FFFFFF",
+    "text_muted": "#A1BBAE"
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "Generous (p-8, p-12, p-24)",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "grid_strategy": "Asymmetrical Tetris Grid for Tokenomics and About sections to keep the layout dynamic and playful. Heavy use of rounded corners (rounded-3xl) for all cards."
+  },
+  "animations": {
+    "scroll": "Lenis for smooth scrolling momentum",
+    "background": "tsparticles configured for floating jungle leaves (green/yellow/orange polygons or leaf SVGs)",
+    "micro_interactions": "Framer Motion hover scales (scale-105) on cards, continuous glowing drop-shadows on CTA buttons (drop-shadow-[0_0_15px_rgba(57,255,20,0.6)])",
+    "hero_mascot": "Floating animation using framer-motion (animate={{ y: [-15, 15, -15] }}, transition={{ repeat: Infinity, duration: 4 }})"
+  },
+  "components": {
+    "header": {
+      "style": "Glassmorphism sticky nav (backdrop-blur-xl bg-[#050B08]/60 border-b border-[#39FF14]/20)",
+      "elements": [
+        "Logo",
+        "Links: About, Chart, Tokenomics, Roadmap",
+        "Buy Now CTA (Neon Green)"
+      ]
+    },
+    "hero": {
+      "layout": "2-column on desktop. Left: Massive H1, Subtitle, CTA buttons (Buy & Chart), Contract Address copy box. Right: Floating Sloth Mascot.",
+      "special": "Marquee banner below hero running '$FLASH - LITTLE FLASH - THE FASTEST SLOTH IN CRYPTO' using react-fast-marquee"
+    },
+    "chart_section": {
+      "style": "Large bento container with glowing green border and subtle inner glow.",
+      "embed": "Dexscreener iframe (solana pair placeholder)"
+    },
+    "about_section": {
+      "layout": "Grid-based storytelling. Large typography.",
+      "style": "Dark green translucent cards with neon orange accents."
+    },
+    "token_info": {
+      "layout": "Bento Grid (Total Supply, Tax, LP Burned).",
+      "interactive": "Click-to-copy Contract Address box with Sonner toast notification."
+    },
+    "roadmap": {
+      "layout": "Vertical glowing timeline or 4-column card grid.",
+      "phases": [
+        "Phase 1: The Awakening (Launch, DEX Listing, Socials)",
+        "Phase 2: Jungle Dominance (CoinGecko/CMC, Marketing)",
+        "Phase 3: Meme Expansion (CEX Listings, Partnerships)",
+        "Phase 4: Sloth Speed (Utility Rollout, Global Takeover)"
+      ]
+    },
+    "meme_gallery": {
+      "layout": "CSS Grid (Columns: 1 mobile, 2 tablet, 3 desktop) with Framer Motion Lightbox on click.",
+      "hover": "Images scale up slightly and border glows on hover."
+    },
+    "footer": {
+      "style": "Massive typography '$FLASH', social icon links (Twitter, Telegram), disclaimer text. Very generous top padding (pt-32)."
+    }
+  },
+  "assets": {
+    "logo": "https://customer-assets.emergentagent.com/job_531ec90e-7e8f-4b7a-89cd-33ea431bc5f8/artifacts/2zym3y4u_pfp.jpg",
+    "hero_mascot": "https://customer-assets.emergentagent.com/job_531ec90e-7e8f-4b7a-89cd-33ea431bc5f8/artifacts/c4fucffe_mascot.jpg",
+    "roadmap_reference": "https://customer-assets.emergentagent.com/job_531ec90e-7e8f-4b7a-89cd-33ea431bc5f8/artifacts/pdurh1yr_road%20map.jpg",
+    "gallery": [
+      "https://customer-assets.emergentagent.com/job_531ec90e-7e8f-4b7a-89cd-33ea431bc5f8/artifacts/s6yql5yo_photo_2026-04-12_22-48-19%20%282%29.jpg",
+      "https://customer-assets.emergentagent.com/job_531ec90e-7e8f-4b7a-89cd-33ea431bc5f8/artifacts/xjxuvvem_photo_2026-04-12_22-48-17.jpg"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Create the app purely using functional React components (.jsx / .js, NO .tsx).",
+    "Use Tailwind CSS for all styling. Ensure colors match the provided hex codes in this JSON.",
+    "Install `@studio-freight/react-lenis` or `lenis` for smooth scrolling in the main layout wrapper.",
+    "Install and use `framer-motion` for scroll reveal animations, the lightbox gallery, and the floating mascot.",
+    "Install and use `react-fast-marquee` for a continuous scrolling ticker.",
+    "Install `lucide-react` for standard UI and social icons.",
+    "Install `sonner` for the copy-to-clipboard success toast on the contract address.",
+    "Install `react-tsparticles` and `tsparticles` for the floating jungle leaves background. Use slow moving, glowing green/orange particles.",
+    "Ensure all interactive elements have data-testid attributes (e.g., data-testid='buy-button', data-testid='copy-ca-button', data-testid='nav-link-about', data-testid='gallery-image').",
+    "Make the main Buy Buttons heavily animated with a continuous pulsing drop-shadow to emphasize the call to action.",
+    "Include the Dexscreener iframe. Use `https://dexscreener.com/solana/` as the base, use a placeholder solana pair if needed.",
+    "Implement a simple state-based lightbox for the Meme Gallery so clicking an image expands it in a modal over the UI.",
+    "No backend code is required. All data (roadmap, tokenomics) should be hardcoded in the frontend components."
+  ]
+}
