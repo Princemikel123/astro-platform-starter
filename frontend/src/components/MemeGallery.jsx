@@ -7,15 +7,35 @@ const MASCOT_URL = "https://customer-assets.emergentagent.com/job_531ec90e-7e8f-
 const galleryImages = [
   {
     src: "https://customer-assets.emergentagent.com/job_531ec90e-7e8f-4b7a-89cd-33ea431bc5f8/artifacts/s6yql5yo_photo_2026-04-12_22-48-19%20%282%29.jpg",
-    alt: "Flash the Sloth - Chill Mode",
+    alt: "Little Flash - Chill Mode",
   },
   {
     src: "https://customer-assets.emergentagent.com/job_531ec90e-7e8f-4b7a-89cd-33ea431bc5f8/artifacts/xjxuvvem_photo_2026-04-12_22-48-17.jpg",
-    alt: "Flash the Sloth - Happy Vibes",
+    alt: "Little Flash - Happy Vibes",
   },
   {
     src: MASCOT_URL,
-    alt: "Flash the Sloth - Superhero",
+    alt: "Little Flash - Superhero",
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_sloth-crypto-demo/artifacts/t2mrcyiy_photo_2026-04-12_22-48-12.jpg",
+    alt: "Little Flash - Tongue Out",
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_sloth-crypto-demo/artifacts/vla54auu_photo_2026-04-12_22-48-11.jpg",
+    alt: "Little Flash - Zoo Keeper",
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_sloth-crypto-demo/artifacts/j74ntx9i_photo_2026-04-12_22-48-09.jpg",
+    alt: "Little Flash - Baby Face",
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_sloth-crypto-demo/artifacts/c0tzl50r_photo_2026-04-12_22-47-55.jpg",
+    alt: "Little Flash - Cozy Nap",
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_sloth-crypto-demo/artifacts/19yhqty8_photo_2026-04-12_22-46-41.jpg",
+    alt: "Little Flash - Snack Time",
   },
 ];
 
@@ -40,7 +60,7 @@ export default function MemeGallery() {
             Meme <span className="text-[#FF6B00]">Gallery</span>
           </h2>
           <p className="mt-3 text-[#A1BBAE] text-base sm:text-lg" style={{ fontFamily: "'Outfit', sans-serif" }}>
-            The finest sloth content on the blockchain
+            The finest FLASH content on the blockchain
           </p>
         </motion.div>
 

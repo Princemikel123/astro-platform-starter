@@ -68,7 +68,7 @@ export default function AboutSection() {
                 <h3 className="font-['Anton'] text-xl sm:text-2xl uppercase text-white tracking-tight">The Philosophy: Slow and Steady Wins the Moon</h3>
               </div>
               <p className="text-[#A1BBAE] leading-relaxed" style={{ fontFamily: "'Outfit', sans-serif" }}>
-                In a market full of dogs and cats, $FLASH introduces the Sloth Meta. We represent a community of Diamond-Claw holders who understand that real wealth is built through patience and a strong ecosystem.
+                In a market full of dogs and cats, $FLASH introduces the FLASH Meta. We represent a community of Diamond-Claw holders who understand that real wealth is built through patience and a strong ecosystem.
               </p>
             </motion.div>
           </div>

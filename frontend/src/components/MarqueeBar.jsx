@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 const items = [
   "$FLASH",
   "LITTLE FLASH",
-  "THE FASTEST SLOTH IN CRYPTO",
+  "THE FASTEST FLASH IN CRYPTO",
   "SLOW AND STEADY WINS THE MOON",
   "DIAMOND CLAWS",
   "$FLASH",
